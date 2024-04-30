@@ -1,0 +1,32 @@
+body{
+    position: absolute;
+    left: 40em;
+    top: 15em
+}
+
+#forma{
+    /* background-color: red; */
+    width: 35em;
+    height: 25em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 5px 10px 20px 5px rgb(190, 196, 202), inset 20px 11px 30px 20px rgb(225, 228, 231)}
+input{
+    width: 25em;
+    height: 3em;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid grey;
+    padding-left: 10px;
+}
+button{
+    width: 10em;
+    height: 3em;
+    border-radius: 10px;
+    border: 1px solid grey;
+}

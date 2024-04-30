@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- string e integer -->
+    <!-- regullar expresion perdor (/) -->
+    <script>
+        let regex1 = /[a-c]/  //merr shkronja nga 'a' deri ne 'c'
+        let regexw = new RegExp('[a-c]')  //dy metoda te ndryshme
+
+
+        let emri = "Jeta"
+
+        console.log(regex1.exec(emri));
+        //'a' kapoziten 3, e   qet index:3(0,1,2,3)
+        //
+        //
+        //
+        //
+        //
+
+        let text = "London, Spain, Paris"
+        let rezult = text.match("ain");
+        console.log(rezult)
+        //e qet ,,index:10,,,, index tregon pas cilit shkronj paraqitet qka ke lyp ti
+        // tek 'spain' ,, p eshte shkronja e 10;
+
+        //
+        //
+        //
+
+        let replace = " Ew huajw";
+        let rezultREPLACE = replace.replace("w","ë")
+        console.log(rezultREPLACE)
+        // 'ew huajw' => 'eë huajw'
+        let all = replace.replaceALL("w", "ë")///kqyre edhe nje here
+
+        //"https://regexr.com/"
+
+        // /[a-z]/g ----qikjo 'g'  e bon qe kjo me kqyr per krejt shkronjat jo mu nal si te sheh te paren
+
+
+    </script>
+</body>
+</html>
