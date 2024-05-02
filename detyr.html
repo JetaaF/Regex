@@ -9,12 +9,35 @@
 </head>
 
 <body>
-    <form id="forma" action="#" method="get">
+    <div id="forma">
+        <p class="l">Write your email</p>
         <p id="paragf"></p>
-        <input type="text">
-        <button id="but-on">click</button>
-    </form>
-<!-- rebbitMQ -->
+        <input id="inputiEmail" type="text">
+        <button onclick="checkEmail()" id="but-on">click</button>
+    </div>
+
+
+    <!-- rebbitMQ -->
+
+    <script>
+        function checkEmail() {
+            let rezultate = document.querySelector("#paragf");
+            let emailInput = document.getElementById("inputiEmail").value;
+            // ^--tregon me cka me ja nis
+            // i mer a-z, poashtu A-Z, si dhe 0-9
+            //  +--duhet me qita qka do qe osht mbrapa
+            if (/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2-4}$/.test(emailInput)) {
+                rezultate.textContent = "Email is valid";
+                rezultate.style.color = 'green'
+            }
+            else {
+                rezultate.textContent = "Email is Invalid";
+                rezultate.style.color = 'red';
+
+            }
+
+        }
+    </script>
 </body>
 
 </html>
